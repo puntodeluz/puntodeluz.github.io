@@ -2,73 +2,59 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>✦</title>
+  <title>Punto de Luz Mundial</title>
   <style>
     body {
       margin: 0;
       background-color: black;
+      color: #e0ffe0;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
     }
-    img {
+    .fondo {
       width: 100vw;
       height: 100vh;
-      object-fit: cover;
-      display: block;
+      background: url('portada.png') no-repeat top center;
+      background-size: contain;
+      background-color: black;
+    }
+    .mensaje {
+      padding: 20px;
+      background: black;
+    }
+    .mensaje h2 {
+      margin: 10px 0;
+      color: #ccffcc;
+    }
+    .mensaje p {
+      margin: 5px;
+    }
+    .boton {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #00ffaa;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+    .boton:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <img src="portada.png" alt="Flor de la Vida Cósmica">
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Punto de Luz Mundial</title>
-    <style>
-        body {
-            margin: 0;
-            background-color: black;
-            background-image: url('fondo.png');
-            background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
-            color: #e1f5c4;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .content {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 30px;
-            border-radius: 20px;
-            display: inline-block;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.2em;
-        }
-        p {
-            font-size: 1.3em;
-            margin-bottom: 2em;
-        }
-        a.button {
-            background-color: #00ffcc;
-            color: #000;
-            text-decoration: none;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            border-radius: 10px;
-        }
-        a.button:hover {
-            background-color: #00ddaa;
-        }
-    </style>
-</head>
-<body>
-    <div class="content">
-        <h1>Estás ante el rugido del cosmos interior</h1>
-        <p>Si llegaste aquí, no fue casualidad.<br>El pueblo aún puede despertar.</p>
-        <a class="button" href="Cartel_TrenMaya_con_QR.pdf" target="_blank">Descargar Cartel</a>
-    </div>
+  <div class="fondo"></div>
+  <div class="mensaje">
+    <h2>Estás ante el rugido del cosmos interior</h2>
+    <p>Si llegaste aquí, no fue casualidad.</p>
+    <p>El pueblo aún puede despertar.</p>
+
+    <a class="boton" href="portada.png" download>Descargar Cartel</a>
+    <a class="boton" href="red.html">Entrar a la Red de Conocimiento</a>
+  </div>
 </body>
 </html>
